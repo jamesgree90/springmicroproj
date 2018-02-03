@@ -1,0 +1,14 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jamesgree90/springmicro
+          username: jamesgree90 
+          password: gjh1346
+          search-paths: userservice, itemservice
+        encrypt:
+          enabled: false
